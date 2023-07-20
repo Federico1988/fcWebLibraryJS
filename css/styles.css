@@ -1,0 +1,505 @@
+* {
+  /* Reseteo */
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables de colores */
+/* configuracion del html */
+html {
+  /* 100% viene por defecto, 62.5% es para obtener 1rem=10px  */
+  font-size: 100%;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.gigantFont {
+  font-size: 5rem;
+  line-height: 0.5;
+  /* Adjust this value to reduce the interline height for the large font */
+}
+@media screen and (max-width: 768px) {
+  .gigantFont {
+    font-size: 3rem;
+  }
+}
+
+.backgroundImg, .paisaje8, .paisaje7, .paisaje6, .paisaje5, .paisaje4, .paisaje3, .paisaje2, .paisaje1, header {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+a {
+  font-size: 2rem;
+}
+@media screen and (max-width: 500px) {
+  a {
+    font-size: small;
+  }
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #f1f2eb;
+}
+
+.headerFooterColor {
+  background-color: #536271;
+}
+
+header {
+  background-image: url("../imgs/keyboardBkgnd.jpg");
+  padding-top: 5%;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+header a {
+  text-align: center;
+}
+header a:hover {
+  background-color: #561d25;
+}
+header input[type=search] {
+  border: none;
+  font-size: larger;
+  font-weight: 500;
+  height: 100%;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  header input[type=search] {
+    margin: 10px;
+  }
+}
+
+.navbar-nav .nav-item {
+  flex: 1;
+}
+
+.headerLinks {
+  color: #f1f2eb;
+  font-weight: 500;
+  font-size: larger;
+  text-decoration: none;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .headerLinks {
+    width: 90vw;
+  }
+}
+
+.navMenu {
+  z-index: 9999;
+}
+
+#idxImage {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+@media screen and (max-width: 768) {
+  #idxImage {
+    height: 500px;
+  }
+}
+
+.idxText {
+  border-radius: 12px;
+  width: 40%;
+  height: auto;
+  box-shadow: 0 5px 20px #536271;
+  background-color: rgba(241, 242, 235, 0.9);
+  text-align: justify;
+  font-size: large;
+  padding: 30px;
+  margin: 40px 0px 50px 20px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  .idxText {
+    width: 90%;
+    font-size: medium;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .idxText {
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+  }
+}
+
+.formDiv {
+  text-align: left;
+}
+@media screen and (min-width: 1024px) {
+  .formDiv {
+    display: flex;
+    align-content: center;
+  }
+}
+
+h2 {
+  margin-top: 30px;
+}
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: medium;
+  }
+}
+
+.fotosPersonas img {
+  margin: 10px;
+  width: 400px;
+  height: 300px;
+  vertical-align: baseline;
+  display: inline-block;
+}
+@media screen and (max-width: 500px) {
+  .fotosPersonas img {
+    height: auto;
+    width: 100%;
+    margin: 2px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+  .fotosPersonas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .fotosPersonas img {
+    width: 300px;
+  }
+}
+
+.fotosLugares {
+  padding: 20px;
+  display: grid;
+  background-color: #ce8147;
+  grid-template-columns: repeat(3, 1fr) 2fr;
+  grid-template-rows: repeat(4, 300px);
+  grid-template-areas: "foto1 foto1 foto2 foto3" "foto1 foto1 foto4 foto3" "foto5 foto6 foto7 foto3" "foto5 foto8 foto8 foto3";
+  grid-gap: 5px;
+}
+@media screen and (max-width: 500px) {
+  .fotosLugares {
+    /* Para mobile (max 500px) acomodo las fotos en una sola columna */
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    grid-gap: 10px;
+    grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6" "foto7" "foto8";
+  }
+}
+
+.paisaje1 {
+  transition: all 0.3s;
+}
+
+.paisaje2 {
+  transition: all 0.3s;
+}
+
+.paisaje3 {
+  transition: all 0.3s;
+}
+
+.paisaje4 {
+  transition: all 0.3s;
+}
+
+.paisaje5 {
+  transition: all 0.3s;
+}
+
+.paisaje6 {
+  transition: all 0.3s;
+}
+
+.paisaje7 {
+  transition: all 0.3s;
+}
+
+.paisaje8 {
+  transition: all 0.3s;
+}
+
+.paisaje1 {
+  grid-area: foto1;
+  background-image: url("../imgs/lugares/img_5279.JPG");
+}
+
+.paisaje2 {
+  grid-area: foto2;
+  background-image: url("../imgs/lugares/img_5289.JPG");
+}
+
+.paisaje3 {
+  grid-area: foto3;
+  background-image: url("../imgs/lugares/img_5346.JPG");
+}
+
+.paisaje4 {
+  grid-area: foto4;
+  background-image: url("../imgs/lugares/img_5313.JPG");
+}
+
+.paisaje5 {
+  grid-area: foto5;
+  background-image: url("../imgs/lugares/img_5504.JPG");
+}
+
+.paisaje6 {
+  grid-area: foto6;
+  background-image: url("../imgs/lugares/img_5291.JPG");
+}
+
+.paisaje7 {
+  grid-area: foto7;
+  background-image: url("../imgs/lugares/img_5423.JPG");
+}
+
+.paisaje8 {
+  grid-area: foto8;
+  background-image: url("../imgs/lugares/img_5365.JPG");
+}
+
+form {
+  text-align: left;
+  margin-top: 30px;
+}
+form input,
+form textarea {
+  padding: 5px;
+  font-size: large;
+  margin: 20px;
+}
+
+.formLabel {
+  display: inline-block;
+  width: 250px;
+  margin-bottom: 30px;
+  padding: 5px;
+  font-size: large;
+  margin: 20px;
+}
+
+.contentRight {
+  display: flex;
+  text-align: right;
+}
+
+.sign {
+  text-align: right;
+}
+
+.classlist {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0px 30px 0px;
+  list-style: none;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.classlist a {
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 500px) {
+  .classlist {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .classlist a {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 768px) {
+  .classlist {
+    padding: 0px;
+    justify-content: center;
+  }
+}
+
+footer {
+  margin-top: 50px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+footer img {
+  width: 60px;
+  height: 60px;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 500px) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer img {
+    width: 50px;
+    height: 50px;
+  }
+  footer p {
+    height: 40px;
+    display: inline;
+  }
+}
+@media screen and (min-width: 500px) {
+  footer {
+    text-align: right;
+  }
+}
+
+.aboutIframe {
+  margin: 30px 0px 30px 0px;
+  border-radius: 12px;
+  width: 100%;
+  height: 520px;
+  box-shadow: 0 5px 20px #536271;
+}
+@media screen and (max-width: 768px) {
+  .aboutIframe {
+    margin-top: 20px;
+    height: 350px;
+  }
+}
+
+.spotifyIframe {
+  z-index: 1;
+  position: relative;
+  border-radius: 12px;
+  width: 20%;
+  height: 352px;
+  box-shadow: 0 5px 20px #ce8147;
+  margin: 0 0 10px 0;
+}
+@media screen and (max-width: 500px) {
+  .spotifyIframe {
+    height: 152px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .spotifyIframe {
+    height: 352px;
+    width: 30%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .spotifyIframe {
+    margin: 10px;
+  }
+}
+
+.soptifyListItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 500px) {
+  .soptifyListItems {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+p {
+  text-align: justify;
+  font-size: x-large;
+}
+@media screen and (max-width: 500px) {
+  p {
+    font-size: smaller;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  p {
+    font-size: small;
+  }
+}
+
+h1 {
+  margin: 20px 0px 20px 0px;
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: large;
+  }
+}
+
+.roundButton {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  width: 350px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 400;
+  text-align: center;
+  color: black;
+  border: 1px solid #536271;
+  transition: background-color 0.3s ease;
+}
+.roundButton:hover {
+  background-color: rgba(86, 29, 37, 0.2);
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .roundButton {
+    width: 300px;
+  }
+}
+
+.buttonUp {
+  z-index: 9999;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  background-color: #f1f2eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  opacity: 0;
+  pointer-events: none;
+  width: 110px;
+  height: 110px;
+}
+.buttonUp a img {
+  width: 100px;
+  height: 100px;
+}
+.buttonUp.show {
+  opacity: 100;
+  pointer-events: all;
+  /* Disable pointer events when hidden */
+}
+@media screen and (max-width: 768px) {
+  .buttonUp {
+    right: 10px;
+    width: 80px;
+    height: 80px;
+  }
+  .buttonUp a img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

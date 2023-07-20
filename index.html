@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biblioteca personal de un instrumentista de piano">
+    <meta name="keywords" content="Piano, Instrumentista, Música, Hobbies">
+    <title>FC | Biblioteca Personal de pianista (FC)</title>
+    <!-- Bootstrap  (antes que los propios)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Insertar archivo CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imgs/pianoIcon.jpg" type="image/x-icon">
+    <!-- Google fonts, Source Sans Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,500&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navMenu">
+            <div class="container-fluid">
+                <button id="menu-toggle" class="navbar-toggler ms-auto headerFooterColor" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#n_bar" aria-controls="navbarNavAltMarkup"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="n_bar">
+                    <ul class="navbar-nav headerFooterColor">
+                        <button id="back-button" class="navbar-toggler ms-auto headerFooterColor" type="button"
+                            style="display: none;">
+                            X
+                        </button>
+                        <li class="nav-item active"><a class="nav-link headerLinks" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link headerLinks" href="paginas/acercaDe.html">Acerca De</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link headerLinks" href="paginas/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link headerLinks"
+                                href="paginas/misInfluencias.html">Influencias</a></li>
+                        <li class="nav-item"><a class="nav-link headerLinks" href="paginas/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item"><input type="search" placeholder="Buscar.."></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <h1>Biblioteca de un músico...</h1>
+            <div class="idxText">
+                <p><span class="bold italics gigantFont">"</span> Pensó en todo ello y se sentó en el
+                    banco donde dormitaba el vigilante nocturno, y se dejó llevar por sus
+                    pensamientos. O, mejor dicho, se dejó llevar por la música, porque la música, pese
+                    a todo, le gustaba. Había dos viejecitos tocando, uno la viola y el otro la guitarra, y
+                    tocaban conmovedoras melodías de la Coimbra de su juventud, de cuando él era un
+                    estudiante universitario y pensaba en la vida como en un porvenir radiante" </p>
+                <p class="sign italics">Sostiene Pereira (Antonio Tabucchi)</p>
+            </div>
+            <img id="idxImage" src="imgs/pianoAndLibrary.jpg" alt="Biblioteca con Piano">
+        </div>
+
+
+    </main>
+    <footer class="contentRight headerFooterColor">
+        <div><a href="https://www.facebook.com/"><img src="./imgs/socialNetworks/facebook.png"
+                    alt="Logo de Facebook"></a></div>
+        <div><a href="https://www.youtube.com/"><img src="./imgs/socialNetworks/youtube.png" alt="Logo de YouTube"></a>
+        </div>
+        <div><a href="https://www.instagram.com/"><img src="./imgs/socialNetworks/instagram.png"
+                    alt="Logo de Instagram"></a></div>
+    </footer>
+    <!-- Script para el boton "back" del menu hamburguesa -->
+    <script src="./js/backNavButtonMobile.js"></script>
+    <!-- Script JS de bootsrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

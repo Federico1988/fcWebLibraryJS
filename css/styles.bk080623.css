@@ -1,0 +1,406 @@
+* {
+    /* Reseteo */
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --alabaster: #f1f2ebff;
+    --chocolate-cosmos: #561d25ff;
+    --caramel: #ce8147ff;
+    --polynesian-blue: #094d92ff;
+    --paynes-gray: #536271ff;
+}
+
+/* configuracion del html */
+html {
+    /* 100% viene por defecto, 62.5% es para obtener 1rem=10px  */
+    font-size: 100%;
+}
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--alabaster);
+}
+
+.headerFooterColor {
+    background-color: var(--paynes-gray);
+}
+
+header ul {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.fondoHeader {
+    background-image: url("../imgs/keyboardBkgnd.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 5%;
+}
+
+a {
+    font-size: 2rem;
+}
+
+.headerLinks {
+    color: var(--alabaster);
+    font-weight: 500;
+    font-size: larger;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header a:hover {
+    background-color: var(--chocolate-cosmos);
+}
+
+header input[type=search] {
+    /* padding: 6px; */
+    border: none;
+    font-size: larger;
+    font-weight: 500;
+    text-decoration: center;
+    height: 100%;
+}
+
+#idxImage {
+    width: 100%;
+    height: auto;
+}
+
+
+section {
+    padding: 20px;
+}
+
+.floatingVideo {
+    position: fixed;
+    width: 727px;
+    height: 409px;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 30px;
+
+}
+
+
+
+.formSection {
+    text-align: left;
+}
+
+.justifyText {
+    text-align: justify;
+}
+
+
+p {
+    text-align: justify;
+    font-size: xx-large;
+}
+
+@media screen and (max-width:500px) {
+    p {
+        text-align: left;
+        font-size: medium;
+    }
+
+}
+
+
+.fotosPersonas img {
+    margin: 10px;
+    width: 400px;
+    vertical-align: baseline;
+}
+
+
+.fotosLugares {
+    padding: 20px;
+    display: grid;
+    background-color: var(--caramel);
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-rows: repeat(4, 300px);
+    grid-template-areas:
+        "foto1 foto1 foto2 foto3"
+        "foto1 foto1 foto4 foto3"
+        "foto5 foto6 foto7 foto3"
+        "foto5 foto8 foto8 foto3";
+    grid-gap: 5px;
+}
+
+.paisaje1 {
+    grid-area: foto1;
+    background-image: url("../imgs/lugares/img_5279.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.paisaje1:hover {
+    transform: scale(1.2);
+}
+
+.paisaje2 {
+    grid-area: foto2;
+    background-image: url("../imgs/lugares/img_5289.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.paisaje2:hover {
+    transform: scale(1.2);
+}
+
+.paisaje3 {
+    grid-area: foto3;
+    background-image: url("../imgs/lugares/img_5346.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.paisaje3:hover {
+    transform: scale(1.2);
+}
+
+.paisaje4 {
+    grid-area: foto4;
+    background-image: url("../imgs/lugares/img_5313.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.paisaje4:hover {
+    transform: scale(1.2);
+}
+
+.paisaje5 {
+    grid-area: foto5;
+    background-image: url("../imgs/lugares/img_5504.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.paisaje5:hover {
+    transform: scale(1.2);
+}
+
+.paisaje6 {
+    grid-area: foto6;
+    background-image: url("../imgs/lugares/img_5291.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.paisaje6:hover {
+    transform: scale(1.2);
+}
+
+.paisaje7 {
+    grid-area: foto7;
+    background-image: url("../imgs/lugares/img_5423.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.paisaje7:hover {
+    transform: scale(1.2);
+}
+
+.paisaje8 {
+    grid-area: foto8;
+    background-image: url("../imgs/lugares/img_5365.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.paisaje8:hover {
+    transform: scale(1.2);
+}
+
+/* .fotosDiv img {
+    margin: 20px;
+} */
+
+form {
+    margin: 50px;
+    text-align: left;
+    max-width: 650px;
+}
+
+form input,
+textarea {
+    padding: 5px;
+    font-size: large;
+    margin: 20px;
+}
+
+.formLabel {
+    display: inline-block;
+    width: 250px;
+    margin-bottom: 30px;
+    padding: 5px;
+    font-size: large;
+    margin: 20px;
+
+}
+
+.contentRight {
+    text-align: right;
+}
+
+.contentCenter {
+    text-align: center;
+}
+
+.classlist {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    list-style: disc;
+}
+
+footer {
+    padding-bottom: 10px;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    margin-right: 3%;
+    margin-top: 20px;
+}
+
+footer p {
+    height: 70px;
+    display: inline;
+}
+
+.aboutIframe {
+    width: 100%;
+    height: 320px;
+}
+
+.spotifyIframe {
+    border-radius: 12px;
+    width: 20%;
+    height: 352px;
+    margin: 10px;
+    box-shadow: 0 5px 20px var(--caramel);
+}
+
+.soptifyListItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+p{
+    font-size: medium;
+}
+@media screen and (max-width:500px) {
+    h1 {
+        font-size: large;
+    }
+
+    h2 {
+        font-size: medium;
+    }
+
+    .fotosLugares {
+        /* Para celu (max 500px) acomodo las fotos en una sola columna */
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 200px);
+        grid-gap: 10px;
+        grid-template-areas:
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4"
+            "foto5"
+            "foto6"
+            "foto7"
+            "foto8";
+    }
+
+    .fotosPersonas {
+        justify-content: center;
+    }
+
+    .fotosPersonas img {
+        width: 250px;
+        margin: 2px;
+        align-self: center;
+    }
+
+    .soptifyListItems {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spotifyIframe {
+        height: 152px;
+        width: 100%;
+    }
+
+    .classlist {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    a {
+        font-size: small;
+    }
+
+    footer {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    footer img {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer p {
+        height: 40px;
+        display: inline;
+    }
+
+    p{
+        font-size: smaller;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    .spotifyIframe {
+        height: 352px;
+        width: 30%;
+    }
+
+    p{
+        font-size: small;
+    }
+    
+}
+
+
+@media screen and (min-width:500px) {
+
+    footer {
+        text-align: right;
+    }
+}
